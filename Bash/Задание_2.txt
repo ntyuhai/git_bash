@@ -1,0 +1,147 @@
+1. Зайти в домашнюю директорию. 2. Создать папку test 3
+tyuha@Nastya MINGW64 ~/Documents/bash_training (master)
+$ mkdir test_3
+
+
+3. Добавить в папку test 3 три файла 4, 5 и 6, в каждом из которых должно быть по 4 строки row1, row2, row3, row4
+tyuha@Nastya MINGW64 ~/Documents/bash_training (master)
+$ cd test_3
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ touch file_4.txt file_5.txt file_6.txt
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ echo -e "row1\nrow2\nrow3\nrow4" >> file_4.txt
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ echo -e "row1\nrow2\nrow3\nrow4" >> file_5.txt
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ echo -e "row1\nrow2\nrow3\nrow4" >> file_6.txt
+
+
+4. Найдите строку row2 в файле 5
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ cat file_5.txt | grep "row2"
+row2
+
+
+5. Найдите строку row в папке test3
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ ls
+file_4.txt  file_5.txt  file_6.txt
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ cat file_4.txt file_5.txt file_6.txt | grep "row"
+row1
+row2
+row3
+row4
+row1
+row2
+row3
+row4
+row1
+row2
+row3
+row4
+
+
+6. Посчитайте сколько строк с содержимым row в файле 6
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ cat file_6.txt | grep "row" -c
+4
+
+
+7. Найдите файл 5 внутри папки test3
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ find . -name "file_5.txt"
+./file_5.txt
+
+
+8. Используя команду find, удалите файл 5
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ find . -name "file_5.txt" -delete
+
+
+9. Используя команду echo, добавьте слово test в файл 4
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ echo "test" >> file_4.txt
+
+
+10. Замените слово test в файле 4 на fail
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ sed "s/test/fail/g" file_4.txt
+row1
+row2
+row3
+row4
+fail
+
+
+11. Добавьте в файл 4 слово test так, чтобы сохранилось содержимое
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ echo test >> file_4.txt
+tyuha@Nastya MINGW64 ~/Documents/bash_training/test_3 (master)
+$ cat file_4.txt
+row1
+row2
+row3
+row4
+fail
+test
+
+
+12. Просмотрите все процессы для юзеров не только в консоли, которые происходят в системе
+tyuha@Nastya MINGW64 ~/Documents/bash_training (master)
+$ ps aux
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     2414       1    2414      23276  cons0     197610 22:38:41 /usr/bin/bash
+      956       1     956      32028  ?         197610 13:02:54 /usr/bin/mintty
+     2440    2414    2440      36616  cons0     197610 22:38:56 /usr/bin/ps
+      957     956     957       8988  pty1      197610 13:02:54 /usr/bin/bash
+
+
+13. Убейте процесс 666 в консоли
+tyuha@Nastya MINGW64 ~/Documents/bash_training (master)
+$ kill 666
+bash: kill: (666) - No such process
+
+
+14. Узнайте доступность ресурса artsiomrusau.com, используя ping
+tyuha@Nastya MINGW64 ~/Documents/bash_training (master)
+$ ping artsiomrusau.com
+
+Pinging artsiomrusau.com [185.215.4.92] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 185.215.4.92:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+
+15. Отправьте 5 пакетов на сайт artsiomrusau.com
+tyuha@Nastya MINGW64 ~/Documents/bash_training (master)
+$ ping -c 5 artsiomrusau.com
+
+
+16. Используя GET и команду curl, получите информацию о зарегистрированных питомцах на https://petstore.swagger.io/
+tyuha@Nastya MINGW64 ~/Documents/bash_training (master)
+$ curl -X 'GET' \
+  'https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=pending&status=sold' \
+  -H 'accept: application/json'
+
+
+17. Используя POST и команду curl, создайте нового пользователя на https://petstore.swagger.io/
+tyuha@Nastya MINGW64 ~/Documents/bash_training (master)
+$ curl -X 'POST' \
+  'https://petstore.swagger.io/v2/user' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 0,
+  "username": "m.bobko",
+  "firstName": "Maria",
+  "lastName": "Bobko",
+  "email": "mbobko@gmail.com",
+  "password": "12345",
+  "phone": "678908789",
+  "userStatus": 0
+}'
