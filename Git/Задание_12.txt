@@ -177,3 +177,25 @@ Writing objects: 100% (3/3), 1.25 KiB | 1.25 MiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/ntyuhai/Charles_proxy.git
    ed11501..2240202  main -> main
+
+
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/ntyuhai (main)
+$ git add .
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/ntyuhai (main)
+$ git commit -m "Добавление блока Testing Artefacts"
+[main a12a953] Добавление блока Testing Artefacts
+ 1 file changed, 16 insertions(+)
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/ntyuhai (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 627 bytes | 627.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ntyuhai/ntyuhai.git
+   3f50872..a12a953  main -> main
