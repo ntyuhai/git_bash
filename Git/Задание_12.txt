@@ -1,0 +1,179 @@
+tyuha@Nastya MINGW64 ~/Documents/git_training/ntyuhai (main)
+$ git add .
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/ntyuhai (main)
+$ git commit -m "Добавление портфолио"
+[main ccc0a2f] Добавление портфолио
+ 3 files changed, 81 insertions(+), 16 deletions(-)
+ create mode 100644 image-1.png
+ create mode 100644 image.png
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/ntyuhai (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 57.94 KiB | 28.97 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ntyuhai/ntyuhai.git
+   2f2a5cf..ccc0a2f  main -> main
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/ntyuhai (main)
+$ git pull
+Updating ccc0a2f..e5cd373
+Fast-forward
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/ntyuhai (main)
+$
+
+
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Web_app_testing (main)
+$ git add .
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Web_app_testing (main)
+$ git commit -m "Добавление блока по тестированию веб-приложений"
+[main b712ecf] Добавление блока по тестированию веб-приложений
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Web_app_testing (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 970 bytes | 970.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ntyuhai/Web_app_testing.git
+   bb14f40..b712ecf  main -> main
+
+
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Api_testing (main)
+$ git add .
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Api_testing (main)
+$ git commit -m "Добавление блока по тестированию api"
+[main 2d3868c] Добавление блока по тестированию api
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Api_testing (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.04 KiB | 1.04 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ntyuhai/Api_testing.git
+   4bf7236..2d3868c  main -> main
+
+
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/SQL (main)
+$ git add .
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/SQL (main)
+$ git commit -m "Добавление блока по тетсированию БД"
+[main 2bdce74] Добавление блока по тетсированию БД
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/SQL (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 657 bytes | 657.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ntyuhai/SQL.git
+   3c0f7ab..2bdce74  main -> main
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/SQL (main)
+$ git pull
+Updating 2bdce74..b56ec38
+Fast-forward
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/MongoDB (main)
+$ git add .
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/MongoDB (main)
+$ git commit -m "Добавление блока по MongoDB"
+[main dc78b0a] Добавление блока по MongoDB
+ 1 file changed, 2 insertions(+)
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/MongoDB (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 659 bytes | 659.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ntyuhai/MongoDB.git
+   9afcf0f..dc78b0a  main -> main
+
+
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Mobile_app_testing (main)
+$ git add .
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Mobile_app_testing (main)
+$ git commit -m "Добавление блока по мобильному тестированию"
+[main 277a0e7] Добавление блока по мобильному тестированию
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Mobile_app_testing (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1017 bytes | 1017.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ntyuhai/Mobile_app_testing.git
+   309a25e..277a0e7  main -> main
+
+
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Mobile_app_testing (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 659 bytes | 109.00 KiB/s, done.
+From https://github.com/ntyuhai/Mobile_app_testing
+   277a0e7..861b195  main       -> origin/main
+Updating 277a0e7..861b195
+Fast-forward
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Charles_proxy (main)
+$ git add .
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Charles_proxy (main)
+$ git commit -m "Добавление блока Перехват трафика через Charles Proxy"
+[main 2240202] Добавление блока Перехват трафика через Charles Proxy
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+
+tyuha@Nastya MINGW64 ~/Documents/git_training/Charles_proxy (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.25 KiB | 1.25 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ntyuhai/Charles_proxy.git
+   ed11501..2240202  main -> main
